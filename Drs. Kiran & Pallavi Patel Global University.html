@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://ums.kpgu.ac.in/StudentPanel/Exam/Result/EXM_StudentResultDisplay.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Drs. Kiran &amp; Pallavi Patel Global University
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta name="description"><meta name="author"><link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/css" rel="stylesheet" media="all" type="text/css">
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/bootstrap-switch.min.css" rel="stylesheet" type="text/css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/bootstrap-fileinput.css" rel="stylesheet" type="text/css">
+
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/daterangepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css">
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/select2.min.css" rel="stylesheet" type="text/css">
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/select2-bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/datatables.min.css" rel="stylesheet" type="text/css">
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/datatables.bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/animate.css" rel="stylesheet">
+    <!-- END PAGE LEVEL PLUGINS -->
+     <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/bootstrap-multiselect.css" rel="stylesheet" id="style_components" type="text/css">
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/components.min.css" rel="stylesheet" id="style_components" type="text/css">
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/plugins.min.css" rel="stylesheet" type="text/css">
+    <!-- END THEME GLOBAL STYLES -->
+
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/layout.min.css" rel="stylesheet" type="text/css">
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/default.min.css" rel="stylesheet" type="text/css" id="style_color">
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/custom.min.css" rel="stylesheet" type="text/css">
+    <!-- END THEME LAYOUT STYLES -->
+
+    <!-- BEGIN CUSTOM STYLES -->
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/gn-globals-min.css" rel="stylesheet" type="text/css">
+    <link href="./Drs. Kiran &amp; Pallavi Patel Global University_files/gn-custom-min.css" rel="stylesheet" type="text/css">
+    <link id="ctl00_logoicon" rel="shortcut icon" href="./Drs. Kiran &amp; Pallavi Patel Global University_files/InsLogoSquare_1.jpg">
+    <!-- END CUSTOM STYLES -->
+
+
+    <!-- BEGIN BODY -->
+    <style>
+        .page-sidebar .page-sidebar-menu li > a.nav-link, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li > a.nav-link {
+            display: flex !important;
+        }
+
+        .page-footer {
+            /*position: fixed !important;*/
+            left: 0 !important;
+            right: 0 !important;
+            z-index: 10000 !important;
+            bottom: 0 !important;
+        }
+
+        .page-title {
+            box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.08) !important;
+        }
+    </style>
+    
+
+
+    <script>
+        //To Prevent Focus Lost on Post Back in Update Panel
+        var postbackElement = null;
+        function RestoreFocus(source, args) {
+            if (postbackElement != null && postbackElement.id != null) {
+                var PostBackControl = document.getElementById(postbackElement.id);
+
+                if (PostBackControl != null && typeof (PostBackControl.type) !== 'undefined') {
+                    var x = PostBackControl.type;
+
+                    if (x == "select-one")
+                        PostBackControl.focus();
+
+                    if (PostBackControl.classList.contains("btnSave"))
+                        GNScrollToTop();
+                }
+            }
+        }
+        function SavePostbackElement(source, args) {
+            postbackElement = args.get_postBackElement();
+        }
+        function AddRequestHandler() {
+
+            // if (typeof Sys !== 'undefined') {
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+            prm.add_endRequest(RestoreFocus);
+            prm.add_beginRequest(SavePostbackElement);
+            //  }
+        }
+    </script>
+
+    <!--Google Analytics -->
+    
+    <!-- Google Analytics -->
+</head>
+<body class="page-header-menu-fixed page-container-bg-solid page-footer-fixed" onload="AddRequestHandler()">
+    <form name="aspnetForm" method="post" action="https://ums.kpgu.ac.in/StudentPanel/Exam/Result/EXM_StudentResultDisplay.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/ScriptResource.axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/ScriptResource(1).axd" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A9308261">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+</div>
+
+        <div class="page-wrapper">
+            <div class="page-wrapper-row">
+                <!-- BEGIN HEADER -->
+                <div class="page-header">
+                    <!-- BEGIN HEADER TOP -->
+                    <div class="page-header-top">
+                        <div class="container-fluid">
+                            <!-- BEGIN LOGO -->
+                            <div class="page-logo margin-bottom-10 margin-top-10">
+                                <a id="ctl00_hlLogo" title="Logo" href="https://ums.kpgu.ac.in/StudentPanel/StudentDashboard.aspx"><img id="ctl00_imgLogo" alt="logo" src="./Drs. Kiran &amp; Pallavi Patel Global University_files/InsLogoSquare_1.jpg" style="border-width:0px;max-height: 75px"></a>
+                            </div>
+
+                            <!-- END LOGO -->
+                            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                            <a href="javascript:;" class="menu-toggler"></a>
+                            <!-- END RESPONSIVE MENU TOGGLER -->
+                            <!-- BEGIN TOP NAVIGATION MENU -->
+                            <div class="top-menu">
+                                <ul class="nav navbar-nav pull-right">
+
+                                    <!-- BEGIN USER LOGIN DROPDOWN -->
+                                    <li class="dropdown dropdown-user dropdown-dark">
+                                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                            <img id="ctl00_imgCurrentUserPhoto" class="img-circle" src="./Drs. Kiran &amp; Pallavi Patel Global University_files/Faculty_NoImg.jpeg" style="border-width:0px;">
+                                            <span class="username username-hide-mobile">
+                                                <i>Hi,</i>
+                                                <span id="ctl00_lblCurrentUsername" class="username username-hide-mobile bold font-green">PATEL VIVEK</span>
+                                            </span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-default">
+                                            <li>
+                                                <a id="ctl00_lbtnMyProfile" href="javascript:__doPostBack(&#39;ctl00$lbtnMyProfile&#39;,&#39;&#39;)"><i class="icon-user"></i>My Profile</a>
+                                            </li>
+                                            <li>
+                                                <a id="ctl00_hlChangePassword" href="https://ums.kpgu.ac.in/StudentPanel/ChangePassword.aspx">
+                                            <i class="icon-key"></i>Change Password 
+                                                </a>
+                                            </li>
+                                            
+                                            <li>
+                                                <a id="ctl00_lbtnLogout" href="javascript:__doPostBack(&#39;ctl00$lbtnLogout&#39;,&#39;&#39;)"><i class="icon-lock"></i>Log Out</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- END USER LOGIN DROPDOWN -->
+                                </ul>
+                            </div>
+                            <!-- END TOP NAVIGATION MENU -->
+                        </div>
+                    </div>
+                    <!-- END HEADER TOP -->
+                    <!-- BEGIN HEADER MENU -->
+                    <div class="page-header-menu fixed" style="display: block;">
+                        <div class="container-fluid">
+                            <!-- BEGIN HEADER SEARCH BOX -->
+                            <!-- END HEADER SEARCH BOX -->
+                            <!-- BEGIN MEGA MENU -->
+                            <!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
+                            <!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover -->
+                            <div class="hor-menu active">
+                                <ul id="ctl00_MenuUL" class="nav navbar-nav"><li class="menu-dropdown classic-menu-dropdown"><a href="https://ums.kpgu.ac.in/StudentPanel/StudentDashboard.aspx"><i class="fa fa-tachometer" aria-hidden="true"></i> &nbsp;Dashboard</a></li><li class="menu-dropdown classic-menu-dropdown"><a href="https://ums.kpgu.ac.in/StudentPanel/STU_Student/STU_Student_ProfileView.aspx"><i class="fa fa-user" aria-hidden="true"></i> &nbsp;Profile</a></li><li class="menu-dropdown classic-menu-dropdown active"><a href="javascript:;"> <i class="fa fa-clipboard" aria-hidden="true"></i> &nbsp;Exam<i class="fa fa-angle-down"></i>&nbsp;</a> <ul class="dropdown-menu pull-left"><li class="active"><a class="nav-link" href="https://ums.kpgu.ac.in/StudentPanel/Exam/Result/EXM_StudentResultDisplay.aspx"> <i class="fa fa-trophy" aria-hidden="true"></i> &nbsp;Result</a></li><li class=" "><a class="nav-link" href="https://ums.kpgu.ac.in/StudentPanel/Exam/EXM_StudentSubjectPosting_SupplementaryFeesPayment.aspx"> <i class="fa fa-file-text" aria-hidden="true"></i> &nbsp;Supplementary Exam Form</a></li></ul></li><li class="menu-dropdown classic-menu-dropdown"><a href="javascript:;"> <i class="fa fa-money" aria-hidden="true"></i> &nbsp;Fee<i class="fa fa-angle-down"></i>&nbsp;</a> <ul class="dropdown-menu pull-left"><li class=" "><a class="nav-link" href="https://ums.kpgu.ac.in/StudentPanel/Fee/FEE_FeeDashboard.aspx"> <i class="fa fa-money" aria-hidden="true"></i> &nbsp;Pay Fees</a></li><li class=" "><a class="nav-link" href="https://ums.kpgu.ac.in/StudentPanel/Fee/StudentFeeHistory.aspx"> <i class="fa fa-history" aria-hidden="true"></i> &nbsp;Fee History</a></li></ul></li></ul>
+                            </div>
+                            <!-- END MEGA MENU -->
+                        </div>
+                    </div>
+                    <!-- END HEADER MENU -->
+                </div>
+                <!-- END HEADER -->
+            </div>
+        </div>
+        <!-- BEGIN PAGE CONTAINER -->
+        <div class="page-container">
+            <!-- BEGIN PAGE HEAD -->
+            <div class="page-head">
+                <div class="container-fluid">
+                    <!-- BEGIN PAGE TITLE -->
+
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="page-title">
+                                <h1>
+                                    
+    <span id="ctl00_cphPageHeader_lblPageHeader_XXXXX">Exam Result</span>
+
+                                    <small>
+                                        <span id="ctl00_lblPageHeaderStudentName_XXXXX">PATEL VIVEK</span></small>
+                                </h1>
+                            </div>
+                            <div class="pull-right">
+                                <div class="row">
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- END PAGE TITLE -->
+                    <!-- BEGIN PAGE TOOLBAR -->
+                    <div class="page-toolbar">
+                        <!-- BEGIN THEME PANEL -->
+                        <!-- END THEME PANEL -->
+                    </div>
+                    <!-- END PAGE TOOLBAR -->
+                </div>
+            </div>
+            <!-- END PAGE HEAD -->
+            <!-- BEGIN PAGE CONTENT -->
+            <div class="page-content" style="min-height: 100vh !important;">
+                <div class="container-fluid">
+                    <!-- BEGIN PAGE BREADCRUMB -->
+                    <ul class="page-breadcrumb breadcrumb" style="padding: 0;">
+                        
+                    </ul>
+                    <!-- END PAGE BREADCRUMB -->
+                    <!-- BEGIN PAGE CONTENT INNER -->
+                    
+    
+        <div class="row">
+            <div class="col-md-12">
+                <div id="ctl00_cphPageContent_ucHelp_HelpDiv" class="note note-info DivHelp g-mb-5" style="display: none">
+                    
+                    <p>
+                        <span id="ctl00_cphPageContent_ucHelp_lblHelp"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$cphPageContent$sm', 'aspnetForm', ['tctl00$cphPageContent$up',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="ctl00_cphPageContent_up">
+	
+            <div class="portlet light">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <span id="ctl00_cphPageContent_lblFormHeaderIcon">
+    <i class="fa fa-cogs font-green-sharp"></i>
+</span>
+                        <span class="caption-subject font-green-sharp bold uppercase">
+                            <span id="ctl00_cphPageContent_lblFormHeader">Search Your Result</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="portlet-body form">
+                    <div class="form-horizontal" role="form">
+                        
+
+
+
+
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-9">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-2">
+                                            <span class="required">*</span>
+                                            <span id="ctl00_cphPageContent_lblExamID_XXXXX">Exam</span>
+                                        </label>
+                                        <div class="col-md-10">
+                                            <select name="ctl00$cphPageContent$ddlExamID" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$cphPageContent$ddlExamID\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_cphPageContent_ddlExamID" disabled="" class="form-control select2me select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+		<option value="-99"> Select Exam</option>
+		<option selected="selected" value="158">KPGU - FoET - B.Tech. Regular Semester - 1 Winter 2023-24</option>
+
+	</select><span class="select2 select2-container select2-container--bootstrap select2-container--disabled" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-labelledby="select2-ctl00_cphPageContent_ddlExamID-container"><span class="select2-selection__rendered" id="select2-ctl00_cphPageContent_ddlExamID-container" title="KPGU - FoET - B.Tech. Regular Semester - 1 Winter 2023-24">KPGU - FoET - B.Tech. Regular Semester - 1 Winter 2023-24</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 col-sm-1">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                     
+                </div>
+            </div>
+            <div id="ctl00_cphPageContent_divResult" class="portlet light">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <span>
+    <i class="fa fa-cogs font-green-sharp"></i>
+</span>
+                        <span class="caption-subject font-green-sharp bold uppercase">
+                            <span id="ctl00_cphPageContent_lblSemester">Semester - 1</span>
+                        </span>
+                    </div>
+                    <div class="actions">
+                    </div>
+                </div>
+                <div class="portlet-body form">
+                    <div class="row">
+                        <div class="col-md-7 profile-info table-responsive">
+                            <table class="table table-bordered table-advanced table-striped table-hover">
+                                <thead>
+                                    <tr class="TRDark">
+                                        <th class="GN_TD_Sr">
+                                            <span id="ctl00_cphPageContent_lbhSr_XXXXX">Sr.</span>
+                                        </th>
+                                        <th class="text-center">
+                                            <span id="ctl00_cphPageContent_lbhSubjectCode_XXXXX">Code</span>
+                                        </th>
+                                        <th>
+                                            <span id="ctl00_cphPageContent_lbhSubjectName_XXXXX">Subject</span>
+                                        </th>
+                                        <th id="ctl00_cphPageContent_thCredit" class="text-center">
+                                            <span id="ctl00_cphPageContent_lbhCredit_XXXXX">Credit</span>
+                                        </th>
+	
+                                        
+                                        
+                                        
+                                        
+                                        <th class="text-center">
+                                            <span id="ctl00_cphPageContent_lbhGrade">Result</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                            <tr>
+                                                <td class="GN_TD_Sr">
+                                                    1
+                                                </td>
+                                                <td>
+                                                    21GS2101
+                                                </td>
+                                                <td>
+                                                    Basic Electrical and Electronics Engineering
+                                                </td>
+                                                <td class="text-center col-md-1">
+                                                    3.00
+                                                </td>
+	
+                                                
+                                                
+                                                
+                                                
+                                                <td class="success text-center  col-md-1">O</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="GN_TD_Sr">
+                                                    2
+                                                </td>
+                                                <td>
+                                                    21GS2102
+                                                </td>
+                                                <td>
+                                                    Basic Electrical &amp; Electronics Engineering Laboratory
+                                                </td>
+                                                <td class="text-center col-md-1">
+                                                    1.00
+                                                </td>
+	
+                                                
+                                                
+                                                
+                                                
+                                                <td class="success text-center  col-md-1">O</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="GN_TD_Sr">
+                                                    3
+                                                </td>
+                                                <td>
+                                                    21GS2107
+                                                </td>
+                                                <td>
+                                                    Engineering Physics
+                                                </td>
+                                                <td class="text-center col-md-1">
+                                                    3.00
+                                                </td>
+	
+                                                
+                                                
+                                                
+                                                
+                                                <td class="success text-center  col-md-1">A</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="GN_TD_Sr">
+                                                    4
+                                                </td>
+                                                <td>
+                                                    21GS2108
+                                                </td>
+                                                <td>
+                                                    Engineering Physics Laboratory
+                                                </td>
+                                                <td class="text-center col-md-1">
+                                                    1.00
+                                                </td>
+	
+                                                
+                                                
+                                                
+                                                
+                                                <td class="success text-center  col-md-1">O</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="GN_TD_Sr">
+                                                    5
+                                                </td>
+                                                <td>
+                                                    21GS2114
+                                                </td>
+                                                <td>
+                                                    Language Elective - I
+                                                </td>
+                                                <td class="text-center col-md-1">
+                                                    3.00
+                                                </td>
+	
+                                                
+                                                
+                                                
+                                                
+                                                <td class="success text-center  col-md-1">A</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="GN_TD_Sr">
+                                                    6
+                                                </td>
+                                                <td>
+                                                    21GS2115
+                                                </td>
+                                                <td>
+                                                    Language Elective - I Laboratory
+                                                </td>
+                                                <td class="text-center col-md-1">
+                                                    1.00
+                                                </td>
+	
+                                                
+                                                
+                                                
+                                                
+                                                <td class="success text-center  col-md-1">
+                                                    A+
+                                                </td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="GN_TD_Sr">
+                                                    7
+                                                </td>
+                                                <td>
+                                                    21GS2116
+                                                </td>
+                                                <td>
+                                                    Mathematics for Engineers - I
+                                                </td>
+                                                <td class="text-center col-md-1">
+                                                    3.00
+                                                </td>
+	
+                                                
+                                                
+                                                
+                                                
+                                                <td class="success text-center  col-md-1">A+</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="GN_TD_Sr">
+                                                    8
+                                                </td>
+                                                <td>
+                                                    21GS2117
+                                                </td>
+                                                <td>
+                                                    Mathematics for Engineers - I Laboratory
+                                                </td>
+                                                <td class="text-center col-md-1">
+                                                    1.00
+                                                </td>
+	
+                                                
+                                                
+                                                
+                                                
+                                                <td class="success text-center  col-md-1">
+                                                    A+
+                                                </td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="GN_TD_Sr">
+                                                    9
+                                                </td>
+                                                <td>
+                                                    21GS2118
+                                                </td>
+                                                <td>
+                                                    Programming for Problem Solving - I
+                                                </td>
+                                                <td class="text-center col-md-1">
+                                                    3.00
+                                                </td>
+	
+                                                
+                                                
+                                                
+                                                
+                                                <td class="success text-center  col-md-1">O</td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td class="GN_TD_Sr">
+                                                    10
+                                                </td>
+                                                <td>
+                                                    21GS2119
+                                                </td>
+                                                <td>
+                                                    Programming for Problem Solving - I Laboratory
+                                                </td>
+                                                <td class="text-center col-md-1">
+                                                    2.00
+                                                </td>
+	
+                                                
+                                                
+                                                
+                                                
+                                                <td class="success text-center  col-md-1">O</td>
+                                            </tr>
+                                        
+                                </tbody>
+                            </table>
+                            <div class="row margin-top-10">
+                                <div class="col-md-12">
+                                    
+        <div class="alert alert-success  margin-top-10">
+            <i class="fa fa-check-circle"></i>
+            <span id="ctl00_cphPageContent_ucMessageResult_lblSuccess">You have passed all the subjects.</span>
+            <a id="ctl00_cphPageContent_ucMessageResult_hlSuccess"></a>
+        </div>
+     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5">
+                            <div class="portlet sale-summary">
+                                <div class="portlet-body">
+                                    <div class="dl-horizontal-group">
+                                        <dl class="dl-horizontal">
+                                            <dt>
+                                                <span id="ctl00_cphPageContent_lblSeatNo_XXXXX">Seat No.</span>
+                                            </dt>
+                                            <dd>
+                                                <span id="ctl00_cphPageContent_lblSeatNo">2301201137</span>
+                                            </dd>
+                                        </dl>
+                                        <dl class="dl-horizontal">
+                                            <dt>
+                                                <span id="ctl00_cphPageContent_lblStudentLCName_XXXXX">Name</span>
+                                            </dt>
+                                            <dd>
+                                                <span id="ctl00_cphPageContent_lblStudentLCName">PATEL VIVEK</span>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="dl-horizontal">
+                                            <dt>
+                                                <span id="ctl00_cphPageContent_lbhCurrentBacklog_XXXXX">Current Backlog</span>
+                                            </dt>
+                                            <dd>
+                                                <span id="ctl00_cphPageContent_lblCurrentSemBackLog">0</span>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="dl-horizontal">
+                                            <dt>
+                                                <span id="ctl00_cphPageContent_lbhTotalBacklog_XXXXX">Total Backlog</span>
+                                            </dt>
+                                            <dd>
+                                                <span id="ctl00_cphPageContent_lblTotalBackLog">0</span>
+                                            </dd>
+                                        </dl>
+
+                                        <dl id="ctl00_cphPageContent_liSGPA" class="dl-horizontal">
+                                            <dt>
+                                                <span id="ctl00_cphPageContent_lbhSGPA_XXXXX">SGPA</span>
+                                            </dt>
+                                            <dd>
+                                                <span id="ctl00_cphPageContent_lblSPI">8.82</span>
+                                            </dd>
+                                        </dl>
+
+
+                                        <dl id="ctl00_cphPageContent_liCGPA" class="dl-horizontal">
+                                            <dt>
+                                                <span id="ctl00_cphPageContent_lbhCGPA_XXXXX">CGPA</span>
+                                            </dt>
+                                            <dd>
+                                                <span id="ctl00_cphPageContent_lblCGPA">8.82</span>
+                                            </dd>
+                                        </dl>
+
+                                        <dl id="ctl00_cphPageContent_liResultClass" class="dl-horizontal">
+                                            <dt>
+                                                <span id="ctl00_cphPageContent_lbhResultClass_XXXXX">Result class</span>
+                                            </dt>
+                                            <dd>
+                                                <span id="ctl00_cphPageContent_lblResultClass">-</span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <br>
+                                    <ul class="list-unstyled margin-top-10">
+                                        <li class="text-right margin-bottom-10 ">
+                                            
+                                        </li>
+                                        <li class="text-right margin-top-10">
+                                            
+                                        </li>
+                                        <li class="text-right margin-bottom-10">
+                                            
+                                        </li>
+                                        <li class="text-right">
+                                            
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+</div>
+
+                    <!-- END PAGE CONTENT INNER -->
+                </div>
+            </div>
+            <!-- END PAGE CONTENT -->
+        </div>
+        <!-- END PAGE CONTAINER -->
+        <!-- BEGIN PRE-FOOTER -->
+        <!-- END PRE-FOOTER -->
+        <!-- BEGIN FOOTER -->
+        <div class="page-footer">
+            <div class="container-fluid">
+                2024 © Drs. Kiran &amp; Pallavi Patel Global University
+            </div>
+        </div>
+
+        <div class="modal fade" id="viewiFrameReg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <iframe class="auto-height" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="" msallowfullscreen="true" style="border: 0px; width: 100%;" onload="this.height=this.contentWindow.document.body.scrollHeight;" height="0" src="./Drs. Kiran &amp; Pallavi Patel Global University_files/saved_resource.html"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="viewiFrameLG" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-body">
+                    <iframe class="auto-height" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="" msallowfullscreen="true" style="border: 0px; width: 100%;" onload="this.height=this.contentWindow.document.body.scrollHeight;" height="0" src="./Drs. Kiran &amp; Pallavi Patel Global University_files/saved_resource(1).html"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="viewiFrameFull" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-full">
+                <div class="modal-body">
+                    <iframe class="auto-height" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="" msallowfullscreen="true" style="border: 0px; width: 100%;" onload="this.height=this.contentWindow.document.body.scrollHeight;" height="0" src="./Drs. Kiran &amp; Pallavi Patel Global University_files/saved_resource(2).html"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-to-top" style="display: block;">
+            <i class="icon-arrow-up"></i>
+        </div>
+
+        <!-- END FOOTER -->
+        <!-- BEGIN JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) -->
+        <!-- BEGIN CORE PLUGINS -->
+        <!--[if lt IE 9]>
+<script src="../../../Default/assets/global/plugins/respond.min.js?V=2022.12.05.12.05"></script>
+<script src="../../../Default/assets/global/plugins/excanvas.min.js?V=2022.12.05.12.05"></script> 
+<script src="../../../Default/assets/global/plugins/ie8.fix.min.js?V=2022.12.05.12.05"></script> 
+<![endif]-->
+        <!-- BEGIN CORE PLUGINS -->
+
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/jquery.min.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/bootstrap.min.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/js.cookie.min.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/jquery.slimscroll.min.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/jquery.blockui.min.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/bootstrap-switch.min.js.download" type="text/javascript"></script>
+
+        <!-- END CORE PLUGINS -->
+
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/bootstrap-fileinput.js.download" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/jquery-ui.min.js.download" type="text/javascript"></script>
+
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/select2.full.min.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/bootstrap-datepicker.min.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/bootstrap-timepicker.min.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/bootstrap-datetimepicker.min.js.download" type="text/javascript"></script>
+
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/datatable.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/datatables.min.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/datatables.bootstrap.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/bootbox.min.js.download"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/app.min.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/components-date-time-pickers.min.js.download" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+         <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/bootstrap-multiselect.js.download" type="text/javascript"></script>
+
+       
+
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/layout.min.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/demo.min.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/quick-sidebar.min.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/quick-nav.min.js.download" type="text/javascript"></script>
+        <!-- END THEME LAYOUT SCRIPTS -->
+
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/tinymce.bundle.js.download"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/UI_TinyMCE.js.download"></script>
+
+        <!-- BEGIN CUSTOM SCRIPTS -->
+
+
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/UI_Select2.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/GN_UI.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/CommonValidation.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/CommonJSFunctions.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/UI_ModalEvents.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/UI_BlockUI.js.download" type="text/javascript"></script>
+        <script src="./Drs. Kiran &amp; Pallavi Patel Global University_files/GN_InitMain.js.download" type="text/javascript"></script>
+
+        <!-- END CUSTOM SCRIPTS -->
+
+
+        <script>
+
+            $(document).ready(function () {
+                InitMain.init();
+            });
+
+
+            $(document).ajaxStart(function () {
+
+                funBlockUI();
+
+            }).ajaxStop(function () {
+
+                funUnblockUI();
+
+                InitMain.init();
+
+            });
+
+            function CheckMenu() {
+                var MenuData = localStorage.getItem('StudentMenu');
+                if (MenuData != null)
+                    document.getElementById("ctl00_MenuUL").innerHTML = MenuData;
+
+        }
+        jQuery(document).ready(function () {
+
+
+            console
+            //CHeck Menu in Browser Session 
+            var MenuData = localStorage.getItem('StudentMenu');
+            if (MenuData != null) {
+                document.getElementById("ctl00_MenuUL").innerHTML = MenuData;
+            }
+            else {
+                $.ajax({
+                    type: "post",
+                    url: "https://ums.kpgu.ac.in/WS/FillMenu_Student.asmx/FillStudentMenuByUserID",
+                    data: "{ UserID: '" + 'V7ti5RJlEDA=' + "',StudentID: '" + 'wg0SLtOeJyw=' + "'}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+
+                    success: function (r) {
+                        if (r.d != undefined) {
+                            localStorage.setItem('StudentMenu', r.d);
+                            CheckMenu();
+                        }
+                        else {
+                            alert("Try after sometime");
+                        }
+                    },
+                    error: function (r) {
+                        //alert("error");
+                        //alert(r.responseText);
+                    }
+                });
+            }
+
+            var pathname = window.location.pathname; // Returns path only
+            var url = window.location.href
+
+            $("#ctl00_MenuUL li >ul > li > a").each(function () {
+                var h = $(this).attr("href");
+                if (h == url) {
+                    $(this).closest('li').addClass("active");
+
+                    $(this).parent().parent().parent().addClass("active");
+
+                    if ($(this).parent().parent().parent().parent().parent() != undefined)
+                        $(this).parent().parent().parent().parent().parent().addClass("active");
+                }
+
+            });
+
+            $("#ctl00_MenuUL li > a").each(function () {
+                var h = $(this).attr("href");
+                if (h == url) {
+                    $(this).parent().addClass("active");
+                }
+            });
+
+
+
+        });
+
+        if (typeof Sys !== 'undefined') {
+
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+            prm.add_beginRequest(function () {
+
+                funBlockUI();
+
+            });
+            prm.add_endRequest(function () {
+
+                funUnblockUI();
+                InitMain.init();
+                $(".page-header .page-header-menu .hor-menu .navbar-nav>li>a").on("click", function () {
+                    if ($(this).parent().hasClass("classic-menu-dropdown")) {
+                        if ($(this).parent().hasClass("open opened")) {
+                            $(".classic-menu-dropdown").removeClass("open opened");
+                            $(".dropdown-submenu").removeClass("open opened");
+                            $(this).parent().removeClass("open opened");
+                        }
+                        else {
+                            $(".classic-menu-dropdown").removeClass("open opened");
+                            $(".dropdown-submenu").removeClass("open opened");
+                            $(this).parent().addClass("open opened");
+                        }
+                    }
+                });
+
+                $(".page-header .page-header-menu .hor-menu .navbar-nav>li>ul>li>a").on("click", function () {
+                    if ($(this).parent().hasClass("open opened")) {
+                        $(".dropdown-submenu").removeClass("open opened");
+                        $(this).parent().removeClass("open opened");
+                    }
+                    else {
+                        $(".dropdown-submenu").removeClass("open opened");
+                        $(this).parent().addClass("open opened");
+                    }
+                });
+            });
+        }
+
+        $(document).ready(function () {
+            $(".page-header .page-header-menu .hor-menu .navbar-nav>li>a").on("click", function () {
+                if ($(this).parent().hasClass("classic-menu-dropdown")) {
+                    if ($(this).parent().hasClass("open opened")) {
+                        $(".classic-menu-dropdown").removeClass("open opened");
+                        $(".dropdown-submenu").removeClass("open opened");
+                        $(this).parent().removeClass("open opened");
+                    }
+                    else {
+                        $(".classic-menu-dropdown").removeClass("open opened");
+                        $(".dropdown-submenu").removeClass("open opened");
+                        $(this).parent().addClass("open opened");
+                    }
+                }
+            });
+
+            $(".page-header .page-header-menu .hor-menu .navbar-nav>li>ul>li>a").on("click", function () {
+                if ($(this).parent().hasClass("open opened")) {
+                    $(".dropdown-submenu").removeClass("open opened");
+                    $(this).parent().removeClass("open opened");
+                }
+                else {
+                    $(".dropdown-submenu").removeClass("open opened");
+                    $(this).parent().addClass("open opened");
+                }
+            });
+        });
+
+        if (typeof Sys !== 'undefined') {
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+            prm.add_beginRequest(function () {
+
+                funBlockUI();
+                InitMain.init();
+
+            });
+            prm.add_endRequest(function () {
+
+                funUnblockUI();
+                InitMain.init();
+
+
+                /*Old IFrame Modal BEGIN*/
+                $('a.GNModalIFrame').on('click', function (e) {
+                    var src = $(this).attr('href');
+                    var target = $(this).attr('data-target');
+
+                    $(target + " iframe").attr({
+                        'src': src
+                    });
+                    e.preventDefault();
+                });
+
+                $('.modal .fade').on('hidden.bs.modal', function () {
+                    $(".modal .fade iframe").attr({
+                        'src': 'about:blank'
+                    });
+                });
+
+                function closemyModal() {
+                    $('.modal').modal('hide');
+                }
+
+                function closeModalAndRefreshPage() {
+                    $('.modal').modal('hide');
+                    location.reload();
+                }
+
+
+                /*Old IFrame Modal END*/
+
+            });
+
+        }
+
+
+
+
+
+        /*Old IFrame Modal BEGIN*/
+        $('a.GNModalIFrame').on('click', function (e) {
+            var src = $(this).attr('href');
+            var target = $(this).attr('data-target');
+
+            $(target + " iframe").attr({
+                'src': src
+            });
+            e.preventDefault();
+        });
+
+        $('.modal .fade').on('hidden.bs.modal', function () {
+            $(".modal .fade iframe").attr({
+                'src': 'about:blank'
+            });
+        });
+
+        $(document).on("contextmenu", function (e) {
+            e.preventDefault();
+        });
+
+        $(document).keydown(function (event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                return false;  //Prevent from ctrl+shift+i
+            }
+        });
+        /*Old IFrame Modal END*/
+        </script>
+
+        <!-- END JAVASCRIPTS -->
+        
+    <script>
+        $('#li_Result_menu').addClass('active');
+        $('#li_student_ExamResult').addClass('active');
+    </script>
+
+    </form>
+
+
+</body></html>
